@@ -1,0 +1,18 @@
+spring:
+  redis:
+    # server
+    host: 192.168.8.130
+    # port
+    port: 6379
+    # connect-timeout(default = 0)
+    database: 0
+    # connect-timeout(ms)
+    connect-timeout: 1800000
+    lettuce:
+      pool:
+        max-active: 20
+        max-wait: -1
+        max-idle: 5
+        min-idle: 0
+server:
+  port: 8085
